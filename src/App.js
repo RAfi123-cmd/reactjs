@@ -3,19 +3,28 @@ import './App.css';
 
 function App() {
 
-  const category = "RUNNING";
-  const price = 74000000;
-
   return (
-    <div class="Parentbox">
-      <div class="Foto">
-        <img src="sneaker.jpg" />
-      </div>
-      <div class="Deskripsi">
-        <p class="Cate">{category}</p>
-        <h1 class="Title">Pinky Swag</h1>
-        <p class="Price">IDR {price}</p>
-        <p class="Info">
+    <div className="Parentbox">
+    </div>
+  );
+}
+
+function FotoProduk(){
+  return (
+    <div className="Foto">
+      <img className="sneaker.jpg" />
+    </div>
+  );
+}
+function ProdukInfo(){
+  const category = "HOLIDAY";
+  return (
+    <div>
+      <div className="Deskripsi">
+        <p className="Cate">{category}</p>
+        <h1 className="Title">Pinky Swag</h1>
+        <p className="Price">IDR 73.309.399</p>
+        <p className="Info">
           One the most recognizable shoes in the AJ collection, the Air Jordan 3 Retro features
           lightweight, visible cushioning just like the original from '88. Signature details and
           meterials celebrate the game-changing icon</p>
