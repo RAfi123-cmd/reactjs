@@ -31,14 +31,14 @@ function ProdukInfo(props){
           One the most recognizable shoes in the AJ collection, the Air Jordan 3 Retro features
           lightweight, visible cushioning just like the original from '88. Signature details and
           meterials celebrate the game-changing icon</p>
-          <a onClick={TambahCart} href='#'>Add to Cart</a>
+          <a onClick={(e) => TambahCart(name, e)} href='#'>Add to Cart</a>
       </div>
     </div>
   );
 }
 
-function TambahCart(){
-  return console.log("Membeli produk ...");
+function TambahCart(e){
+  return console.log("Membeli " + e);
 }
 
 export default App;
