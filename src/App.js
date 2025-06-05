@@ -5,6 +5,8 @@ function App() {
 
   return (
     <div className="Parentbox">
+      <FotoProduk />
+      <ProdukInfo name="Sneaker" category="LEBARAN" />
     </div>
   );
 }
@@ -12,17 +14,18 @@ function App() {
 function FotoProduk(){
   return (
     <div className="Foto">
-      <img className="sneaker.jpg" />
+      <img src="sneaker.jpg" />
     </div>
   );
 }
-function ProdukInfo(){
-  const category = "HOLIDAY";
+
+function ProdukInfo(props){
+  const { category, name } = props;
   return (
     <div>
       <div className="Deskripsi">
         <p className="Cate">{category}</p>
-        <h1 className="Title">Pinky Swag</h1>
+        <h1 className="Title">{name}</h1>
         <p className="Price">IDR 73.309.399</p>
         <p className="Info">
           One the most recognizable shoes in the AJ collection, the Air Jordan 3 Retro features
